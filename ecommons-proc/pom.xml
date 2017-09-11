@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.net.plat4j</groupId>
+    <artifactId>ecommons</artifactId>
+    <version>4.1.2-SNAPSHOT</version>
+    <relativePath>../../ecommons/ecommons</relativePath>
+  </parent>
+  <artifactId>ecommons-proc</artifactId>
+  
+   
+ 
+   <dependencies>
+	   	<dependency>
+		  	<groupId>cn.com.ebidding</groupId>
+		 	 <artifactId>ebs-api-bizshare</artifactId>
+		</dependency>
+	   <dependency>
+	  		<groupId>cn.com.ebidding</groupId>
+	  		<artifactId>ebs-api-taurus</artifactId>
+	  	</dependency>
+	  	<dependency>
+	  		<groupId>org.net.plat4j</groupId>
+	  		<artifactId>ecommons-utils</artifactId>
+	  	</dependency>
+	  	
+	  	<dependency>
+		    <groupId>joda-time</groupId>
+		    <artifactId>joda-time</artifactId>
+		</dependency>
+   </dependencies>
+  <distributionManagement>
+	    <repository>
+	        <id>ebidding-releases</id>
+	        <name>releases</name>
+	        <url>http://std.ebidding.com.cn:10221/nexus/content/repositories/releases/</url>
+	    </repository>
+	    <snapshotRepository>
+	        <id>ebidding-snapshots</id>
+	        <name>ebidding-snapshots</name>
+	        <url>http://std.ebidding.com.cn:10221/nexus/content/repositories/snapshots/</url>
+	    </snapshotRepository>
+	</distributionManagement>
+</project>

@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.net.plat4j</groupId>
+    <artifactId>ecommons</artifactId>
+    <version>4.1.2-SNAPSHOT</version>
+    <relativePath>../../ecommons/ecommons</relativePath>
+  </parent>
+  <artifactId>ecommons-pdf-signature</artifactId>
+  
+  <dependencies>
+  	<dependency>
+	    <groupId>log4j</groupId>
+	    <artifactId>log4j</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-core</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-slf4j-impl</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-api</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>org.bouncycastle</groupId>
+	    <artifactId>bcpkix-jdk15on</artifactId>
+	    <exclusions>
+	    <exclusion>  
+			<groupId>org.bouncycastle</groupId>
+    		<artifactId>bcprov-jdk15on</artifactId>
+		</exclusion>   
+		</exclusions> 
+	</dependency>
+<!-- 	<dependency> -->
+<!-- 	    <groupId>org.bouncycastle</groupId> -->
+<!-- 	    <artifactId>bcprov-jdk14</artifactId> -->
+<!-- 	</dependency> -->
+	<dependency>
+	    <groupId>commons-io</groupId>
+	    <artifactId>commons-io</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>commons-logging</groupId>
+	    <artifactId>commons-logging</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.pdfbox</groupId>
+	    <artifactId>fontbox</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>com.itextpdf</groupId>
+	    <artifactId>itextpdf</artifactId>
+	    <exclusions>  
+		<exclusion>  
+			<groupId>org.bouncycastle</groupId>
+		    <artifactId>bcmail-jdk14</artifactId>
+		</exclusion>  
+<!-- 		<exclusion>   -->
+<!-- 			<groupId>org.bouncycastle</groupId> -->
+<!-- 		    <artifactId>bcprov-jdk14</artifactId>   -->
+<!-- 		</exclusion>  -->
+		<exclusion>  
+			<groupId>org.bouncycastle</groupId>
+		    <artifactId>bctsp-jdk14</artifactId>
+		</exclusion>   
+		</exclusions> 
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.pdfbox</groupId>
+	    <artifactId>pdfbox</artifactId>
+	</dependency>
+  </dependencies>
+</project>
